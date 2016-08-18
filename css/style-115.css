@@ -1,0 +1,62 @@
+/* General */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+hr {
+	margin: 10px 0px;
+	padding: 0px;
+	border-top: 0px;
+	border-bottom: 1px solid #eee;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+/* Text color classes */
+
+.lblue {
+  color: #32c8de !important;
+}
+.blue {
+  color: #609cec !important;
+}
+
+/* Background color classes */
+
+.bg-lblue {
+  background-color: #2479bc;
+}
+.bg-blue {
+  background-color: #2479bc;
+}
+
+
+
+
+/* UI X */
+.ui-115{
+	margin:70px 0px;
+}
+.ui-115 .ui-115-item{
+	text-align:center;
+	margin:10px auto;
+  margin-bottom: 50px;
+	max-width:250px;
+}
+
+.ui-115 h4 a{
+	color:#777;
+  text-decoration: none;
+}
+.ui-115 .bor{
+	height:3px;
+	width:50px;
+	margin:10px auto;
+}
+.ui-115 p{
+	color:#888;
+}
+
