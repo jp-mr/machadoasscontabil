@@ -18,6 +18,11 @@
     <link href="css/style-115.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!-- Font Awesome CSS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -190,18 +195,34 @@
       </div>  
     </div>
     <!-- Fim Blocos de Serviços -->
-
     </section>
+
+    <!-- Location Section -->
+    <section id="location" class="map">
+      <div class="iframe-container" id="gmap_canvas"></div>
+    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom: 50px;">
+                    <h2 class="section-heading">Fale conosco e nos siga nas
+                        redes socias</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-3 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact" style="padding-right: 15px;"></i>
+                    <p>(12) 12345678 / (12) 9123456</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:#">contato@greencontainerbar.com</a></p>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- jQuery -->
@@ -213,6 +234,55 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/scrollreveal.js"></script>
+
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
+    <script>
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+
+    function init_map(){
+      var myOptions = {
+        zoom:18,
+        center:new google.maps.LatLng(-22.9241528,-45.46106629999997),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+      marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(-22.9241528,-45.46106629999997)
+      });
+      infowindow = new google.maps.InfoWindow({
+        content:'<strong>Mult Tecnologia - UNIDADE: Pindamonhagaba</strong><br>Av. Cel. Fernando Prestes, 60 - Centro, Pindamonhangaba - SP, 12400-240<br>'
+      });
+      google.maps.event.addListener(marker, 'click', function(){
+        infowindow.open(map,marker);
+      });
+      infowindow.open(map,marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+
+
+    </script>
 
 </body>
 
