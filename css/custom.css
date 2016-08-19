@@ -66,7 +66,7 @@ a.navbar-brand.page-scroll {
 
 a > img {
   width: 200px; 
-  margin: 20px 0px 0px 10px;
+  margin: 12px 0px 0px 10px;
 }
 
 button.navbar-toggle {
@@ -105,9 +105,20 @@ button.navbar-toggle {
   border-color: #e1e1e1;
 }
 
+.container > .navbar-collapse {
+  margin-top: 24px;
+}
+
 .navbar .navbar-toggle:hover .icon-bar {
   background-color: #fff;
 }
+
+ul > li {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -117,6 +128,65 @@ h2 {
   margin-bottom: 50px;
 }
 
+/* General */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+hr {
+	margin: 25px 0px;
+	padding: 0px;
+	border-top: 0px;
+	border-bottom: 1px solid #eee;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+/* Text color classes */
+
+.lblue {
+  color: #32c8de !important;
+}
+.blue {
+  color: #609cec !important;
+}
+
+/* Background color classes */
+
+.bg-lblue {
+  background-color: #2479bc;
+}
+.bg-blue {
+  background-color: #2479bc;
+}
+
+/* UI X */
+.ui-115{
+	margin:70px 0px;
+}
+.ui-115 .ui-115-item{
+	text-align:center;
+	margin:10px auto;
+  margin-bottom: 50px;
+	max-width:250px;
+}
+
+.ui-115 h4 a{
+	color:#777;
+  text-decoration: none;
+}
+.ui-115 .bor{
+	height:3px;
+	width:50px;
+	margin:10px auto;
+}
+.ui-115 p{
+	color:#888;
+}
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -124,19 +194,23 @@ h2 {
     background: #2479bc;
 }
 
-.about-section {
-    padding-top: 50px;
+.cert-digit-section {
+    padding-top: 30px;
     text-align: center;
     background: #fff;
 }
 
-.services-section {
-    padding-top: 50px;
+.credit-service-section {
+    padding-top: 30px;
     text-align: center;
     background: #eee;
 }
 
 /* Location Section */
+
+.map {
+  padding-top:60px;
+}
 
 .map div {
   pointer-events: none;
@@ -170,9 +244,66 @@ h2 {
 }
 */
 
+/* Contact Section */
+
 .contact-section {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  margin-top: 35px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  div.navbar-header.page-scroll {
+    min-height: 100px;
+    width: 212px;
+  }
+
+  .navbar > .container .navbar-brand {
+    margin-left: 0px;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 50px;
+  }
+
+  hr {
+	  margin: 10px 0px;
+	  padding: 0px;
+	  border-top: 0px;
+	  border-bottom: 1px solid #eee;
+}
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992) {
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+  .container {
+    width:100%;
+  }
+  
 }
