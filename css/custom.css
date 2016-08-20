@@ -35,6 +35,8 @@ html {
 
     .top-nav-collapse {
         padding: 0;
+        background-color: #fff!important;
+        border-color: #e3e3e3!important;
     }
 }
 
@@ -45,8 +47,8 @@ html {
 }
 
 .navbar-default {
-  background-color: #fff;
-  border-color: #e3e3e3;
+  background-color: transparent; /*#fff;*/
+  border-color: transparent; /*#e3e3e3;*/
 }
 
 div.navbar-header.page-scroll {
@@ -189,9 +191,18 @@ hr {
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
-    background: #2479bc;
+}
+
+.img-background {
+    height: 100%;
+    padding-top:100px;
+    background: url(../img/intro.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .cert-digit-section {
@@ -273,7 +284,7 @@ hr {
   margin-top: 35px;
 }
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 600px and down) */
 @media (max-width: 600px) {
 
   .embed-responsive-16by9 {
@@ -281,7 +292,7 @@ hr {
   }
 }
 
-/* Small devices (tablets, 980px and up) */
+/* Small devices (tablets, 980px and down) */
 @media (max-width: 980px) {
 
   .embed-responsive-16by9 {
@@ -316,6 +327,14 @@ hr {
   a > img {
     width: 290px; 
     margin: 5px 0px 0px 10px;
+  }
+
+  .intro-section {
+    padding-top: 0px;
+  }
+  
+  .img-background {
+    padding-top: 250px;
   }
 
   h2 {
