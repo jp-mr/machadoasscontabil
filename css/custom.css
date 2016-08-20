@@ -47,8 +47,8 @@ html {
 }
 
 .navbar-default {
-  background-color: transparent; /*#fff;*/
-  border-color: transparent; /*#e3e3e3;*/
+  background-color: #fff;
+  border-color: #e3e3e3;
 }
 
 div.navbar-header.page-scroll {
@@ -327,6 +327,11 @@ hr {
   a > img {
     width: 290px; 
     margin: 5px 0px 0px 10px;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
   }
 
   .intro-section {
