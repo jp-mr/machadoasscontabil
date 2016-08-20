@@ -191,7 +191,7 @@ hr {
 
 .intro-section {
     height: 100%;
-    padding-top: 100px;
+    padding-top: 35px;
     text-align: center;
 }
 
@@ -308,6 +308,22 @@ hr {
   }
 }
 
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+
+  .intro-section {
+    padding-top: 0px;
+  }
+ 
+  .img-background {
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -334,13 +350,10 @@ hr {
     border-color: transparent;
   }
 
-  .intro-section {
-    padding-top: 0px;
-  }
-  
   .img-background {
-    padding-top: 250px;
+    padding-top: 380px;
   }
+
 
   h2 {
     margin-top: 46px;
@@ -363,8 +376,32 @@ hr {
 }
 
 
-/* Medium devices (desktops, 980px and up) */
+/* Medium devices (tablets, 980px and up) */
 @media (min-width: 980px) {
+
+  .img-background {
+    padding-top: 420px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+}
+
+/* Medium devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+
+  .img-background {
+    padding-top: 200px;
+  }
+
+}
+
+/* Medium devices (desktops, width 1024px and height 768) */
+@media (min-width: 1024px) and (min-height: 768px) {
+
+  .img-background {
+    padding-top: 250px;
+  }
 
 }
 
@@ -381,10 +418,34 @@ hr {
     margin: 5px 0px 0px 10px;
   }
 
+  .img-background {
+    padding-top: 250px;
+  }
 
+
+  .img-background .container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, 1900px and up) */
+@media (min-width: 1900px) {
+
+  .img-background {
+    padding-top: 350px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .img-background .container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+
+/* Large devices (large desktops, 1200px and down) */
 @media (max-width: 1200px) {
 
   .container {
