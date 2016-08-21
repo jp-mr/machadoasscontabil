@@ -431,6 +431,12 @@ h2 {
     padding-top: 200px;
   }
 
+  /* Contato
+   *----------------------------------*/
+  .contact-section hr {
+    width: 66%;
+  }
+
 }
 
 /* Medium devices (desktops, larguras a partir de 1024px e comprimentos até 768px) */
