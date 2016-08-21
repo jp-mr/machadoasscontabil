@@ -1,19 +1,9 @@
-/*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 /*
 Azul: #2479bc 
-Azul(hover): #495bc0
 Verde: #8be820
 Amarelo: #f3e000
 Vermelho: #f3002d
 */
-
-
-
 
 body {
     width: 100%;
@@ -24,6 +14,9 @@ html {
     width: 100%;
     height: 100%;
 }
+
+/* Alteração no tamanho da navbar 
+ *--------------------------------------------------*/
 
 @media(min-width:767px) {
     .navbar {
@@ -40,7 +33,8 @@ html {
     }
 }
 
-/* Navbar  */
+/* Navbar
+ *--------------------------------------------------*/
 
 .navbar {
   border: 1px solid;
@@ -83,18 +77,18 @@ button.navbar-toggle {
 }
 
 .navbar-default .navbar-nav > li > a {
-      color: #2479bc;
+      color: #135284;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-      color: #024981;
+      color: #8085FF;
 }
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover {
-  color:  #024981;
+  color: #8085FF;
   background-color: #fff;
 }
 
@@ -121,51 +115,22 @@ ul > li {
 }
 
 
+/* Seções
+ *--------------------------------------------------*/
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
+/* Títulos das seções */
 h2 {
   margin-bottom: 50px;
 }
 
-/* General */
-body {
-	-webkit-font-smoothing: antialiased;
-}
-
-hr {
-	margin: 25px 0px;
-	padding: 0px;
-	border-top: 0px;
-	border-bottom: 1px solid #eee;
-}
-:focus {
-	outline:none;
-}
-::-moz-focus-inner {
-	border:0;
-}
-/* Text color classes */
-
-.lblue {
-  color: #32c8de !important;
-}
-.blue {
-  color: #609cec !important;
-}
-
-/* Background color classes */
-
+/* Traço  */
 .bg-lblue {
   background-color: #2479bc;
 }
-.bg-blue {
-  background-color: #2479bc;
-}
 
-/* UI X */
+
+/* Bloco */
+
 .ui-115{
 	margin:70px 0px;
 }
@@ -176,40 +141,47 @@ hr {
 	max-width:250px;
 }
 
-.ui-115 h4 a{
-	color:#777;
-  text-decoration: none;
-}
 .ui-115 .bor{
 	height:3px;
 	width:50px;
 	margin:10px auto;
 }
-.ui-115 p{
-	color:#888;
-}
+
+
+/* Intro
+ *--------------------------------------------------*/
 
 .intro-section {
     height: 100%;
-    padding-top: 35px;
+    padding-top: 100px;
     text-align: center;
+    background: #e3e3e3;
 }
 
-.img-background {
-    height: 100%;
-    padding-top:100px;
-    background: url(../img/intro.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
+/* Certificação Digital
+ *--------------------------------------------------*/
 
 .cert-digit-section {
     padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
-    background: #fff;
+    background: #008cba;
 }
+
+.cert-digit-section h2,
+.cert-digit-section h4,
+.cert-digit-section p {
+  color: #fff;
+}
+
+.cert-digit-section .bg-lblue {
+  background-color: #17609B;
+}
+
+
+/* Credit Service
+ *--------------------------------------------------*/
 
 .credit-service-section {
     padding-top: 30px;
@@ -217,7 +189,9 @@ hr {
     background: #eee;
 }
 
-/* Location Section */
+
+/* Mapa
+ *--------------------------------------------------*/
 
 .map {
   padding-top:97px;
@@ -267,14 +241,32 @@ hr {
 }
 */
 
-/* Contact Section */
+
+/* Contato
+ *--------------------------------------------------*/
 
 .contact-section {
-    height: 100%;
-    padding-top: 100px;
-    text-align: center;
-    background: #fff;
+  height: 100%;
+  padding-top: 100px;
+  text-align: center;
+  background: url(../img/bg-body.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
 }
+
+.contact-section h2,
+.contact-section a,
+.contact-section i {
+  color: #333;
+}
+
+.contact-section hr {
+	border-bottom: 1px solid #AEAEAE;
+}
+
 
 .contact-section h2 {
   margin-bottom: 20px;
@@ -284,49 +276,81 @@ hr {
   margin-top: 35px;
 }
 
-/* Small devices (tablets, 600px and down) */
+.contact-section .footer {
+  font-size: 0.68em;
+  width: 100%;
+  position:absolute; 
+  bottom: 0px;
+}
+
+
+/* Resposividade
+ *--------------------------------------------------*/
+
+
+/* Small devices (tablets, larguras até 600px) */
 @media (max-width: 600px) {
 
+  /* Mapa
+   *----------------------------------*/
   .embed-responsive-16by9 {
     padding-bottom: 100%;
   }
+
 }
 
-/* Small devices (tablets, 980px and down) */
+
+/* Small devices (tablets, larguras até 980px) */
 @media (max-width: 980px) {
 
+  /* Mapa
+   *----------------------------------*/
   .embed-responsive-16by9 {
     padding-bottom: 70%;
   }
+
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 
-  .embed-responsive-16by9 {
-      padding-bottom: 30%;
-  }
-}
-
-/* Small devices (tablets, 600px and up) */
+/* Small devices (tablets, larguras a partir de 600px) */
 @media (min-width: 600px) {
 
+  /* Intro
+   *----------------------------------*/
   .intro-section {
     padding-top: 0px;
   }
  
   .img-background {
-    padding-top: 250px;
-    padding-left: 50px;
-    padding-right: 50px;
+      height: 100%;
+      padding-top: 250px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: url(../img/intro.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  /* Contato
+   *----------------------------------*/
+  .contact-section hr {
+    width: 55%;
+  }
+
+  .contact-section .footer {
+    font-size: 0.73em;
   }
 
 }
 
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, larguras a partir de 768px) */
 @media (min-width: 768px) {
 
+  /* Navbar
+   *----------------------------------*/
   div.navbar-header.page-scroll {
     min-height: 100px;
     width: 212px;
@@ -350,35 +374,46 @@ hr {
     border-color: transparent;
   }
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 380px;
   }
 
 
+  /* Títulos das seções
+   *----------------------------------*/
   h2 {
     margin-top: 46px;
   }
 
+
+  /* Contato
+   *----------------------------------*/
   .contact-section h2 {
     margin-bottom: 50px;
   }
 
-  hr {
-	  margin: 10px 0px;
+  .contact-section hr {
+    width: 50%;
+	  margin: 10px auto;
 	  padding: 0px;
 	  border-top: 0px;
-	  border-bottom: 1px solid #eee;
+	  border-bottom: 1px solid #AEAEAE;
   }
 
   .contact-email {
     margin-top: 35px;
   }
+
 }
 
 
-/* Medium devices (tablets, 980px and up) */
+/* Medium devices (tablets, larguras a partir de 980px) */
 @media (min-width: 980px) {
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 420px;
     padding-left: 80px;
@@ -387,18 +422,22 @@ hr {
 
 }
 
-/* Medium devices (desktops, 1024px and up) */
+/* Medium devices (desktops, larguras a partir de 1024px) */
 @media (min-width: 1024px) {
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 200px;
   }
 
 }
 
-/* Medium devices (desktops, width 1024px and height 768) */
+/* Medium devices (desktops, larguras a partir de 1024px e comprimentos até 768px) */
 @media (min-width: 1024px) and (min-height: 768px) {
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 250px;
   }
@@ -406,9 +445,11 @@ hr {
 }
 
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, larguras a partir de 1200px) */
 @media (min-width: 1200px) {
 
+  /* Navbar
+   *----------------------------------*/
   .img-responsive {
     max-width: 137%;
   }
@@ -418,20 +459,36 @@ hr {
     margin: 5px 0px 0px 10px;
   }
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 250px;
   }
-
 
   .img-background .container {
     padding-left: 150px;
     padding-right: 150px;
   }
+
+  /* Mapa
+   *----------------------------------*/
+  .embed-responsive-16by9 {
+      padding-bottom: 30%;
+  }
+
+  /* Contato
+   *----------------------------------*/
+  .contact-section hr {
+    width: 85%;
+  }
+
 }
 
-/* Large devices (large desktops, 1900px and up) */
+/* Large devices (large desktops, larguras a partir de 1900px) */
 @media (min-width: 1900px) {
 
+  /* Intro
+   *----------------------------------*/
   .img-background {
     padding-top: 350px;
     padding-left: 80px;
@@ -445,7 +502,7 @@ hr {
 }
 
 
-/* Large devices (large desktops, 1200px and down) */
+/* Large devices (large desktops, larguras até 1200px) */
 @media (max-width: 1200px) {
 
   .container {
@@ -455,10 +512,12 @@ hr {
 }
 
 
-/* Small devices (tablets, 768px and up) to Large devices (large desktops, 1200px and down) */
+/* Small devices (tablets, larguras entre 768px e 1200px) */
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
+  /* Links do navbar
+   *----------------------------------*/
   .nav > li > a {
     padding: 10px 10px;
   }
@@ -466,10 +525,12 @@ hr {
 }
 
 
-/* Small devices (tablets, 768px and up) to Medium devices (Tablets, 900px and down) */
+/* Small devices (tablets, larguras entre 768px e 900px) */
 
 @media (min-width: 768px) and  (max-width: 900px) {
- 
+
+  /* Links do navbar
+   *----------------------------------*/
   ul > li {
     font-size: 1.15em;
   }
