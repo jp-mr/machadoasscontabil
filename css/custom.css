@@ -131,17 +131,17 @@ h2 {
 
 /* Bloco */
 
-.ui-115{
+.block{
 	margin:70px 0px;
 }
-.ui-115 .ui-115-item{
+.block .block-item{
 	text-align:center;
 	margin:10px auto;
   margin-bottom: 50px;
 	max-width:250px;
 }
 
-.ui-115 .bor{
+.block .bor{
 	height:3px;
 	width:50px;
 	margin:10px auto;
@@ -163,8 +163,8 @@ h2 {
  *--------------------------------------------------*/
 
 .cert-digit-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     background: #008cba;
 }
@@ -180,13 +180,202 @@ h2 {
 }
 
 
+
+
+
+
+
+.service-block {
+  background-color: #fff;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  /*max-width: 315px;
+  min-width: 230px;*/
+  height:inherit;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.service-block *,
+.service-block *:before,
+.service-block *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.service-block img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.service-block:before,
+.service-block:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #008cba;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.service-block:before {
+  -webkit-transform: skew(30deg) translateX(-80%);
+  transform: skew(30deg) translateX(-80%);
+}
+
+.service-block:after {
+  -webkit-transform: skew(-30deg) translateX(-70%);
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.service-block figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 8px 4% 25px 9px;
+}
+
+.service-block figcaption:before,
+.service-block figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.service-block figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-100%);
+  transform: skew(30deg) translateX(-100%);
+}
+
+.service-block figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-90%);
+  transform: skew(-30deg) translateX(-90%);
+}
+
+
+.service-block h3 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+
+.service-block p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+
+.cert-digit-section h2 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+
+.service-block h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.service-block p {
+  font-size: 0.9em;
+}
+
+
+.service-block a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.service-block:hover h3,
+.service-block.hover h3,
+.service-block:hover p,
+.service-block.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.service-block:hover:before,
+.service-block.hover:before {
+  -webkit-transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-20%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.service-block:hover:after,
+.service-block.hover:after {
+  -webkit-transform: skew(-30deg) translateX(-10%);
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.service-block:hover figcaption:before,
+.service-block.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-40%);
+  transform: skew(30deg) translateX(-40%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.service-block:hover figcaption:after,
+.service-block.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-30%);
+  transform: skew(-30deg) translateX(-30%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
 /* Credit Service
  *--------------------------------------------------*/
 
 .credit-service-section {
     padding-top: 30px;
     text-align: center;
-    background: #eee;
+    background: #fff;
 }
 
 
@@ -360,7 +549,7 @@ h2 {
     margin-left: 0px;
   }
 
-  .img-responsive {
+  .navbar .img-responsive {
     max-width: 137%;
   }
 

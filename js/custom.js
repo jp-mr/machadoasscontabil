@@ -6,3 +6,11 @@ sr.reveal('.sr-contact', {
     distance: '0px'
   }, 
   300);
+
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
