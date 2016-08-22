@@ -179,12 +179,6 @@ h2 {
   background-color: #17609B;
 }
 
-
-
-
-
-
-
 .service-block {
   background-color: #fff;
   color: #ffffff;
@@ -212,7 +206,7 @@ h2 {
 }
 
 .service-block img {
-  backface-visibility: hidden;
+  /*backface-visibility: hidden;*/
   max-width: 100%;
   vertical-align: top;
 }
@@ -359,14 +353,6 @@ h2 {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-
-
-
-
-
-
-
-
 
 
 /* Credit Service
