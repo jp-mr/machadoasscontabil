@@ -152,7 +152,7 @@ h2 {
  *--------------------------------------------------*/
 
 .cert-digit-section {
-    padding-top: 120px;
+    padding-top: 110px;
     padding-bottom: 100px;
     text-align: center;
     background: #2578bc;
@@ -346,8 +346,8 @@ h2 {
  *--------------------------------------------------*/
 
 .credit-service-section {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 110px;
+    padding-bottom: 0px;
     text-align: center;
     background: #fff;
 }
@@ -754,6 +754,9 @@ h2 {
 
   /* Certificação Digital
    *----------------------------------*/
+  .cert-digit-section {
+    padding-top: 136px;
+  }
 
   .cert-digit-section h2 {
     font-size: 3.25em;
@@ -763,9 +766,30 @@ h2 {
     text-align: justify;
   }
 
+  /* Credit Service
+   *----------------------------------*/
+
+  .credit-service-section {
+    padding-top: 136px;
+  }
+
+  .credit-service-section h2 {
+    font-size: 3.5em;
+  }
+
+  .credit-service-section p {
+    text-align: justify;
+  }
+
+
 
   /* Contato
    *----------------------------------*/
+  .contact-section {
+    padding-top: 138px;
+  }
+
+
   .contact-section h2 {
     margin-bottom: 50px;
   }
