@@ -215,6 +215,7 @@ h2 {
   /*backface-visibility: hidden;*/
   max-width: 100%;
   vertical-align: top;
+  width: 99.5%;
 }
 
 .service-block:before,
@@ -276,12 +277,10 @@ h2 {
   transform: skew(-30deg) translateX(-90%);
 }
 
-
 .service-block h3 {
   margin: 0;
   letter-spacing: 1px;
 }
-
 
 .service-block p {
   margin: 10px 0px;
@@ -289,14 +288,12 @@ h2 {
   letter-spacing: 1px;
 }
 
-
 .cert-digit-section h2 {
   font-size: 2em;
-  font-weight: 500;
-  line-height: 0.1em;
+  font-weight: 700;
+  line-height: 1.1em;
   /*text-transform: uppercase;*/
 }
-
 
 .service-block h3 {
   font-size: 1.5em;
@@ -308,7 +305,6 @@ h2 {
 .service-block p {
   font-size: 0.9em;
 }
-
 
 .service-block a {
   position: absolute;
@@ -468,6 +464,30 @@ h2 {
 /* Resposividade
  *--------------------------------------------------*/
 
+/* Small devices (Smatphones, larguras até 500px) */
+@media (max-width: 500px) {
+
+  /* Certificação Digital
+   * ----------------------------------*/
+  .cert-digit-section .col-xs-offset-1 {
+    margin-left: 0%;
+  }
+  .cert-digit-section .col-xs-10 {
+    width: 100%;
+  }
+}
+
+/* Small devices (Smatphones, a partir de 500px) */
+@media (min-width: 500px) and (max-width: 599px) {
+
+  /* Certificação Digital
+   *----------------------------------*/
+
+  .cert-digit-section .col-xs-offset-1 {
+    margin-left: 8%;
+  }
+}
+
 
 /* Small devices (tablets, larguras até 600px) */
 @media (max-width: 600px) {
@@ -492,6 +512,16 @@ h2 {
 
 }
 
+/* Small devices (tablets, larguras a partir de 600px) */
+@media (min-width: 600px) and (max-width: 767px) {
+
+  /* Certificação Digital
+   *----------------------------------*/
+  .cert-digit-section .col-xs-offset-1 {
+    margin-left: 10.7%;
+  }
+}
+
 
 /* Small devices (tablets, larguras a partir de 600px) */
 @media (min-width: 600px) {
@@ -513,6 +543,7 @@ h2 {
       -o-background-size: cover;
       background-size: cover;
   }
+
 
   /* Contato
    *----------------------------------*/
@@ -565,7 +596,22 @@ h2 {
   /* Títulos das seções
    *----------------------------------*/
   h2 {
-    margin-top: 46px;
+    margin-top: 0px;
+  }
+
+  /* Certificação Digital
+   *----------------------------------*/
+
+  .cert-digit-section h2 {
+    font-size: 3.25em;
+  }
+
+  .cert-digit-section p {
+    text-align: justify;
+  }
+
+  .cert-digit-section .col-xs-offset-1 {
+    margin-left: 0%;
   }
 
 

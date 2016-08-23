@@ -1,11 +1,11 @@
-//jQuery to collapse the navbar on scroll
+//jQuery to collapse the navbar on scroll and blocks
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-    if ($(".navbar").offset().top > 420 && $(".navbar").offset().top < 1400){
+    if ($(".navbar").offset().top > 650 && $(".navbar").offset().top < 1630){
         $(".service-block").addClass("hover");
     } else {
         $(".service-block").removeClass("hover");
