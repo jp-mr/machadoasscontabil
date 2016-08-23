@@ -5,6 +5,12 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+    if ($(".navbar").offset().top > 420 && $(".navbar").offset().top < 1400){
+        $(".service-block").addClass("hover");
+    } else {
+        $(".service-block").removeClass("hover");
+    }
+
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin

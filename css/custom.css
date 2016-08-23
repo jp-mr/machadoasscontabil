@@ -120,7 +120,7 @@ ul > li {
 
 /* Títulos das seções */
 h2 {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 /* Traço  */
@@ -155,7 +155,13 @@ h2 {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #e3e3e3;
+    background: url(../img/intro.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 0px;
+
 }
 
 
@@ -180,11 +186,11 @@ h2 {
 }
 
 .service-block {
-  background-color: #fff;
+  background-color: #008cba;
   color: #ffffff;
   display: inline-block;
   font-size: 16px;
-  margin: 10px auto;
+  margin: 13px auto;
   /*max-width: 315px;
   min-width: 230px;*/
   height:inherit;
@@ -286,9 +292,9 @@ h2 {
 
 .cert-digit-section h2 {
   font-size: 2em;
-  font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 0.1em;
+  /*text-transform: uppercase;*/
 }
 
 
